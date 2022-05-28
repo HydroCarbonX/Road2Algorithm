@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.hydrocarbonx.algorithm</groupId>
+    <artifactId>road2-algorithm</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>algorithm-basic</module>
+        <module>algorithm-leetcode</module>
+    </modules>
+
+    <developers>
+        <developer>
+            <id>HydroCarbon</id>
+            <name>Zhenfeng.Zou</name>
+            <email>2728292961@qq.com</email>
+            <timezone>Asia/Shanghai</timezone>
+            <roles>
+                <role>Owner</role>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <properties>
+        <java.version>17</java.version>
+        <resource.delimiter>@</resource.delimiter>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+
+        <algorithm-basic.version>1.0.0-SNAPSHOT</algorithm-basic.version>
+        <algorithm-leetcode.version>1.0.0-SNAPSHOT</algorithm-leetcode.version>
+
+        <slf4j-simple.version>1.7.36</slf4j-simple.version>
+        <lombok.version>1.18.24</lombok.version>
+        <junit-jupiter-api.version>5.8.2</junit-jupiter-api.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.hydrocarbonx.algorithm.basic</groupId>
+                <artifactId>algorithm-basic</artifactId>
+                <version>${algorithm-basic.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hydrocarbonx.algorithm.leetcode</groupId>
+                <artifactId>algorithm-leetcode</artifactId>
+                <version>${algorithm-leetcode.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter-api.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
