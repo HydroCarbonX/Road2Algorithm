@@ -1,6 +1,7 @@
-package org.hydrocarbonx.algorithm.basic.sort;
+package org.hydrocarbonx.algorithm.basic.sort.impl;
 
 import lombok.extern.slf4j.Slf4j;
+import org.hydrocarbonx.algorithm.basic.sort.ISort;
 import org.hydrocarbonx.algorithm.basic.sort.impl.BubbleSort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
