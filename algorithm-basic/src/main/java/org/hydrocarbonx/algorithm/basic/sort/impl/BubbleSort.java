@@ -2,8 +2,6 @@ package org.hydrocarbonx.algorithm.basic.sort.impl;
 
 import org.hydrocarbonx.algorithm.basic.sort.ISort;
 
-import java.util.Objects;
-
 /**
  * 冒泡排序。
  * <a href="https://zh.wikipedia.org/zh-cn/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">冒泡排序 wiki</a>
@@ -22,7 +20,7 @@ public class BubbleSort implements ISort {
     @Override
     public <T extends Comparable<T>> void sort(T[] data) {
         // 长度小于 2 直接返回，不需要排序
-        if (Objects.isNull(data) || data.length < 2) {
+        if (Boolean.TRUE.equals(cannotSort(data))) {
             return;
         }
 

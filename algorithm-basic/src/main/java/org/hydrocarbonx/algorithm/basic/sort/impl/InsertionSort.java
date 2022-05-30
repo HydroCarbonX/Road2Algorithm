@@ -2,8 +2,6 @@ package org.hydrocarbonx.algorithm.basic.sort.impl;
 
 import org.hydrocarbonx.algorithm.basic.sort.ISort;
 
-import java.util.Objects;
-
 /**
  * 插入排序。
  * <a href="https://zh.wikipedia.org/zh-cn/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">插入排序 wiki</a>
@@ -22,7 +20,7 @@ public class InsertionSort implements ISort {
     @Override
     public <T extends Comparable<T>> void sort(T[] data) {
         // 边界值判断
-        if (Objects.isNull(data) || data.length < 2) {
+        if (Boolean.TRUE.equals(cannotSort(data))) {
             return;
         }
 

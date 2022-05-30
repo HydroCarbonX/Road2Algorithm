@@ -2,8 +2,6 @@ package org.hydrocarbonx.algorithm.basic.sort.impl;
 
 import org.hydrocarbonx.algorithm.basic.sort.ISort;
 
-import java.util.Objects;
-
 /**
  * 选择排序。
  * <a href="https://zh.wikipedia.org/zh-cn/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F">选择排序 wiki</a>
@@ -23,7 +21,7 @@ public class SelectionSort implements ISort {
     @Override
     public <T extends Comparable<T>> void sort(T[] data) {
         // 边界判断
-        if (Objects.isNull(data) || data.length < 2) {
+        if (Boolean.TRUE.equals(cannotSort(data))) {
             return;
         }
 
