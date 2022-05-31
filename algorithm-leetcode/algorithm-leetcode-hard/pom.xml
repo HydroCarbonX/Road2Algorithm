@@ -4,21 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>road2-algorithm</artifactId>
-        <groupId>org.hydrocarbonx.algorithm</groupId>
+        <artifactId>algorithm-leetcode</artifactId>
+        <groupId>org.hydrocarbonx.algorithm.leetcode</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.hydrocarbonx.algorithm.leetcode</groupId>
-    <artifactId>algorithm-leetcode</artifactId>
+    <groupId>org.hydrocarbonx.algorithm.leetcode.hard</groupId>
+    <artifactId>algorithm-leetcode-hard</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>algorithm-leetcode-easy</module>
-        <module>algorithm-leetcode-medium</module>
-        <module>algorithm-leetcode-hard</module>
-    </modules>
+    <packaging>jar</packaging>
 
     <properties>
     </properties>
