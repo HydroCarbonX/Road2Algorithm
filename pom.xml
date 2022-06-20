@@ -39,6 +39,7 @@
         <algorithm-leetcode-easy.version>1.0.0-SNAPSHOT</algorithm-leetcode-easy.version>
         <algorithm-leetcode-medium.version>1.0.0-SNAPSHOT</algorithm-leetcode-medium.version>
         <algorithm-leetcode-hard.version>1.0.0-SNAPSHOT</algorithm-leetcode-hard.version>
+        <algorithm-leetcode-common.version>1.0.0-SNAPSHOT</algorithm-leetcode-common.version>
 
         <slf4j-simple.version>1.7.36</slf4j-simple.version>
         <lombok.version>1.18.24</lombok.version>
@@ -72,6 +73,11 @@
                 <groupId>org.hydrocarbonx.algorithm.leetcode.hard</groupId>
                 <artifactId>algorithm-leetcode-hard</artifactId>
                 <version>${algorithm-leetcode-hard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hydrocarbonx.algorithm.leetcode.common</groupId>
+                <artifactId>algorithm-leetcode-common</artifactId>
+                <version>${algorithm-leetcode-common.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

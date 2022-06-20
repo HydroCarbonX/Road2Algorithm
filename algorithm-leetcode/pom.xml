@@ -18,6 +18,7 @@
         <module>algorithm-leetcode-easy</module>
         <module>algorithm-leetcode-medium</module>
         <module>algorithm-leetcode-hard</module>
+        <module>algorithm-leetcode-common</module>
     </modules>
 
     <properties>
