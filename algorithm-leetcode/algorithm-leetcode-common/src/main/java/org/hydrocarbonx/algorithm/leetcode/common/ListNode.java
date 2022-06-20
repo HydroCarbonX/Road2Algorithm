@@ -6,10 +6,10 @@ package org.hydrocarbonx.algorithm.leetcode.common;
  * @author HydroCarbon
  * @since 2022-06-20
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "java:S1104"})
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     ListNode() {
     }
