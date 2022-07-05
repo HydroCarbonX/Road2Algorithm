@@ -13,7 +13,7 @@ import java.util.List;
  */
 @SuppressWarnings("java:S101")
 public class _515FindLargestValueInEachTreeRow {
-    List<Integer> result = new ArrayList<>();
+    final List<Integer> result = new ArrayList<>();
 
     /**
      * 获取 root 树的每一层最大的接节点值。

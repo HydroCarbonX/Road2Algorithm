@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author HydroCarbon
  * @since 2022-05-30

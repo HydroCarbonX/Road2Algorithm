@@ -5,8 +5,6 @@ import org.hydrocarbonx.algorithm.basic.search.ISearch;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author HydroCarbon
  * @since 2022-05-30

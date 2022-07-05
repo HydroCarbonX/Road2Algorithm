@@ -40,7 +40,7 @@ public interface ISort {
      * @return data 不为 null 并且长度要大于 1 返回 true，否则返回 false
      */
     default <T extends Comparable<T>> boolean canSort(T[] data) {
-        return Objects.nonNull(data) && data.length > 1;
+        return !Objects.nonNull(data) || data.length <= 1;
     }
 
     /**
@@ -52,6 +52,6 @@ public interface ISort {
      * @return 与 {@link #canSort(Comparable[])} 相反
      */
     default <T extends Comparable<T>> boolean cannotSort(T[] data) {
-        return !canSort(data);
+        return canSort(data);
     }
 }

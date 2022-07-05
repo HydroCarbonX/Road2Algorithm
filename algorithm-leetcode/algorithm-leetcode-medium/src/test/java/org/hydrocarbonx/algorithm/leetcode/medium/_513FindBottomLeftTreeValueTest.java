@@ -5,8 +5,6 @@ import org.hydrocarbonx.algorithm.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author HydroCarbon
  * @since 2022-06-22
