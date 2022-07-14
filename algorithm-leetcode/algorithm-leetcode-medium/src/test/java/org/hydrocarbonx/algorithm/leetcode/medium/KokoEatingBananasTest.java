@@ -9,15 +9,15 @@ import org.junit.jupiter.api.Test;
  */
 class KokoEatingBananasTest {
 
-    @Test
-    void minEatingSpeed() {
-        _875KokoEatingBananas solution = new _875KokoEatingBananas();
+  @Test
+  void minEatingSpeed() {
+    _875KokoEatingBananas solution = new _875KokoEatingBananas();
 
-        int[] piles = new int[]{3, 6, 7, 11};
-        int h = 8;
+    int[] piles = new int[] {3, 6, 7, 11};
+    int h = 8;
 
-        int result = solution.minEatingSpeed(piles, h);
+    int result = solution.minEatingSpeed(piles, h);
 
-        Assertions.assertEquals(4, result);
-    }
+    Assertions.assertEquals(4, result);
+  }
 }

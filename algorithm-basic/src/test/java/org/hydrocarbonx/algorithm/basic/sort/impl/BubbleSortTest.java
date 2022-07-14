@@ -2,7 +2,6 @@ package org.hydrocarbonx.algorithm.basic.sort.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.hydrocarbonx.algorithm.basic.sort.ISort;
-import org.hydrocarbonx.algorithm.basic.sort.impl.BubbleSort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -17,17 +16,16 @@ import java.util.Arrays;
 @Slf4j
 class BubbleSortTest {
 
-    /**
-     * 针对 {@link BubbleSort#sort(Comparable[])} 进行的测试。
-     */
-    @Test
-    void bubbleSort() {
-        Integer[] integerArray = new Integer[]{3, 2, 1, 55, 43, 56, 32, 6, 543, 23, 7};
-        ISort iSort = new BubbleSort();
-        iSort.sort(integerArray);
+  /** 针对 {@link BubbleSort#sort(Comparable[])} 进行的测试。 */
+  @Test
+  void bubbleSort() {
+    Integer[] integerArray = new Integer[] {3, 2, 1, 55, 43, 56, 32, 6, 543, 23, 7};
+    ISort iSort = new BubbleSort();
+    iSort.sort(integerArray);
 
-        log.info("Sorted integer array is: {}", Arrays.toString(integerArray));
+    log.info("Sorted integer array is: {}", Arrays.toString(integerArray));
 
-        Assertions.assertArrayEquals(new Integer[]{1, 2, 3, 6, 7, 23, 32, 43, 55, 56, 543}, integerArray);
-    }
+    Assertions.assertArrayEquals(
+        new Integer[] {1, 2, 3, 6, 7, 23, 32, 43, 55, 56, 543}, integerArray);
+  }
 }

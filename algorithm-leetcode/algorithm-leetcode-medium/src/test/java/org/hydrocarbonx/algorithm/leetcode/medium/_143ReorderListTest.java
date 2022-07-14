@@ -12,21 +12,21 @@ import org.junit.jupiter.api.Test;
 @SuppressWarnings("all")
 class _143ReorderListTest {
 
-    @Test
-    void reorderList() {
-        ListNode node = new ListNode();
-        ListNode head = node;
+  @Test
+  void reorderList() {
+    ListNode node = new ListNode();
+    ListNode head = node;
 
-        for (int i = 0; i < 10; i++) {
-            node.val = i;
-            node.next = new ListNode();
-            node = node.next;
-        }
-
-        log.info("当前 ListNode 为 {}", head);
-
-        new _143ReorderList().reorderList(head);
-
-        log.info("现在 ListNode 为 {}", head);
+    for (int i = 0; i < 10; i++) {
+      node.val = i;
+      node.next = new ListNode();
+      node = node.next;
     }
+
+    log.info("当前 ListNode 为 {}", head);
+
+    new _143ReorderList().reorderList(head);
+
+    log.info("现在 ListNode 为 {}", head);
+  }
 }

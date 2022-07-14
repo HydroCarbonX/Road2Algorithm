@@ -13,12 +13,12 @@ import java.util.Arrays;
 @Slf4j
 class QuickSortTest {
 
-    @Test
-    void sort() {
-        Integer[] integerArray = new Integer[]{3, 2, 1, 55, 43, 56, 32, 6, 543, 23, 7};
-        ISort iSort = new QuickSort();
-        iSort.sort(integerArray);
+  @Test
+  void sort() {
+    Integer[] integerArray = new Integer[] {3, 2, 1, 55, 43, 56, 32, 6, 543, 23, 7};
+    ISort iSort = new QuickSort();
+    iSort.sort(integerArray);
 
-        log.info("Sorted integer array is: {}", Arrays.toString(integerArray));
-    }
+    log.info("Sorted integer array is: {}", Arrays.toString(integerArray));
+  }
 }
